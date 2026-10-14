@@ -1,0 +1,15 @@
+[package]
+name = "book_typer"
+version = "0.1.0"
+edition = "2024"
+description = "A free desktop app for typing your way through EPUB books"
+license = "MIT"
+repository = "https://github.com/Kelptalks/BookTyper"
+
+[dependencies]
+colored = "3.1.1"
+crossterm = "0.29.0"
+eframe = "0.36.2"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+roxmltree = "0.21.1"
+zip = { version = "9", default-features = false, features = ["deflate"] }

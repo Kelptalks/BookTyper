@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111916">
+  <title>BookTyper — One book. One keystroke at a time.</title>
+  <meta name="description" content="Type your way through your own EPUB books. BookTyper is a free Windows app with reactive visuals, saved progress, and no account to create. Every visual is included.">
+  <link rel="canonical" href="https://booktyper.kelptalks.chatgpt.site/">
+  <meta property="og:title" content="BookTyper — Find your reading rhythm.">
+  <meta property="og:description" content="Your books. Your keyboard. A free desktop app that turns every page into something you can feel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://booktyper.kelptalks.chatgpt.site/">
+  <meta property="og:image" content="https://booktyper.kelptalks.chatgpt.site/social.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="BookTyper home"><span class="book-mark" aria-hidden="true"><i></i><i></i><i></i></span>BookTyper<span class="brand-period">.</span></a>
+    <nav aria-label="Main navigation"><a href="#experience">The experience</a><a href="#start">Get started</a><a class="github-link" href="https://github.com/Kelptalks/BookTyper">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> FREE TO USE. MADE FOR THE LOVE OF IT.</p>
+        <h1 id="hero-title">Find your<br>reading<br><em>rhythm.</em></h1>
+        <p class="hero-description">A book you want to read. <br>A keyboard you love to type on. <br>Meet in the middle.</p>
+        <p class="hero-detail">Type your way through your own books, with a little atmosphere behind every word.</p>
+        <a class="button primary" href="#start"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg> Get BookTyper — free</a>
+        <p class="download-note">Windows desktop · All visuals included · No account</p>
+      </div>
+      <div class="demo-column" id="experience">
+        <div class="demo-frame" data-theme="web">
+          <div class="demo-chrome"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>A LITTLE MOMENT OF FLOW</span><button class="icon-button" id="motion-toggle" aria-label="Pause background animation" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg></button></div>
+          <div class="demo-stage">
+            <canvas id="web-canvas" aria-hidden="true"></canvas>
+            <div class="demo-shade"></div>
+            <div class="demo-reading">
+              <p class="demo-kicker">YOUR NEXT CHAPTER</p>
+              <p class="faded-line" aria-hidden="true">The rest of the world can wait.</p>
+              <div id="passage" class="passage" aria-hidden="true"></div>
+              <label class="visually-hidden" for="typing-input">Type this passage: Somewhere between the first word and the next page, you find your rhythm.</label>
+              <textarea id="typing-input" class="typing-input" rows="2" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off" aria-describedby="typing-hint" placeholder="Click here and start typing…"></textarea>
+              <p class="typing-hint" id="typing-hint">Click the text. Type the words. Take your time.</p>
+              <noscript><p class="noscript-note">This little demo needs JavaScript. The free desktop app works offline.</p></noscript>
+            </div>
+            <div class="demo-bottom"><span id="demo-progress">0 / 74 characters</span><button id="reset-demo" class="text-button">Start again <span aria-hidden="true">↺</span></button></div>
+            <div class="demo-progress-track"><span id="progress-fill"></span></div>
+          </div>
+        </div>
+        <div class="demo-caption"><span>CHOOSE YOUR ATMOSPHERE</span><div class="theme-options" role="group" aria-label="Demo atmosphere"><button data-atmosphere="web" aria-pressed="true"><span class="theme-dot web-dot"></span>Web</button><button data-atmosphere="streaks" aria-pressed="false"><span class="theme-dot streaks-dot"></span>Streaks</button><button data-atmosphere="quiet" aria-pressed="false"><span class="theme-dot quiet-dot"></span>Quiet</button></div></div>
+        <p class="demo-disclaimer">A small browser demo inspired by the app. Your full books live in BookTyper.</p>
+      </div>
+    </section>
+
+    <section class="intro-band wrap" aria-label="About BookTyper">
+      <p class="section-number">01 / THE IDEA</p>
+      <h2>A good book.<br>A different way to <em>read.</em></h2>
+      <div class="intro-copy"><p>Bring a book you already want to read. Follow its words with your fingers. Keep going at your own pace.</p><p>BookTyper remembers your place and gives each session a little texture: a web of light, a trail behind the cursor, or simply a quiet page.</p></div>
+    </section>
+
+    <section class="details wrap" aria-label="What is included">
+      <div class="detail"><span class="detail-index">01</span><h3>Your books, your place.</h3><p>Open a DRM-free EPUB and pick up where you left off. Your books and reading progress stay on your computer.</p></div>
+      <div class="detail"><span class="detail-index">02</span><h3>A little life in every line.</h3><p>Explore reactive backgrounds, glowing cursor trails, and your own colors. Turn the effects down whenever you want a quieter page.</p></div>
+      <div class="detail"><span class="detail-index">03</span><h3>The whole thing is free.</h3><p>Every background. Every setting. No subscription or paid visual packs. The source is on GitHub, too.</p></div>
+    </section>
+
+    <section class="getting-started" id="start" aria-labelledby="start-title"><div class="wrap">
+      <div class="section-heading"><div><p class="section-number">02 / YOUR FIRST PAGE</p><h2 id="start-title">Open a book.<br><em>Make yourself at home.</em></h2></div><div class="release-panel"><span class="release-tag">WINDOWS · v0.1.0 · EARLY RELEASE</span><a class="button primary download-link" href="https://github.com/Kelptalks/BookTyper/releases/download/v0.1.0/BookTyper-v0.1.0-windows-x64.zip"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg> Download for Windows</a><a class="release-notes" href="https://github.com/Kelptalks/BookTyper/releases">Release notes & other options <span aria-hidden="true">↗</span></a></div></div>
+      <ol class="steps">
+        <li><span class="step-number">1</span><div><h3>Download & open</h3><p>Download the ZIP, extract it, and open <strong>BookTyper.exe</strong>. No installer or account needed.</p></div></li>
+        <li><span class="step-number">2</span><div><h3>Bring an EPUB</h3><p>Drag a DRM-free <strong>.epub</strong> onto the window. Try the short sample in the download’s <strong>books</strong> folder, or bring your own.</p></div></li>
+        <li><span class="step-number">3</span><div><h3>Find your rhythm</h3><p>Type the words on the page. Open the gear to change your atmosphere. Try <strong>Background → Marble</strong> for the web effect.</p></div></li>
+      </ol>
+      <div class="start-extras"><p>Need a book? Explore <a href="https://standardebooks.org/ebooks">Standard Ebooks <span aria-hidden="true">↗</span></a> for carefully made EPUBs. Choose a title available for use where you live.</p><a href="https://github.com/Kelptalks/BookTyper#using-booktyper">Read the full guide <span aria-hidden="true">↗</span></a></div>
+      <details class="shortcuts"><summary>A few useful shortcuts <span aria-hidden="true">+</span></summary><dl><div><dt><kbd>F11</kbd></dt><dd>Enter or leave fullscreen</dd></div><div><dt><kbd>Esc</kbd></dt><dd>Go back</dd></div><div><dt><kbd>Tab</kbd></dt><dd>Open the chapter menu while reading</dd></div><div><dt><kbd>Ctrl</kbd> + <kbd>←</kbd> / <kbd>→</kbd></dt><dd>Move between chapters</dd></div><div><dt><kbd>Backspace</kbd></dt><dd>Correct a mistake</dd></div><div><dt><kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>−</kbd></dt><dd>Adjust text size</dd></div></dl></details>
+    </div></section>
+
+    <section class="project-section wrap" aria-labelledby="project-title"><div><p class="section-number">03 / A SMALL, OPEN PROJECT</p><h2 id="project-title">Made to be used.<br><em>Better with your feedback.</em></h2></div><div class="project-copy"><p>BookTyper is a personal project by Spencer. It is early, it is growing, and you are welcome to make it part of your reading routine.</p><p>Found a rough edge? Have an idea? Open an issue on GitHub. If you enjoy building things, the code is there to explore.</p><div class="project-links"><a class="button secondary" href="https://github.com/Kelptalks/BookTyper">Explore on GitHub <span aria-hidden="true">↗</span></a><a class="plain-link" href="https://github.com/Kelptalks/BookTyper/issues">Share feedback <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="faq wrap" aria-labelledby="faq-title"><h2 id="faq-title">Before you turn the page.</h2><div>
+      <details><summary>Is everything really free?<span aria-hidden="true">+</span></summary><p>Yes. The app, backgrounds, and settings are free. There are no paid visual packs or subscriptions.</p></details>
+      <details><summary>Which books can I use?<span aria-hidden="true">+</span></summary><p>BookTyper opens DRM-free EPUB files. It does not open encrypted Kindle or other protected ebooks, PDFs, or plain text files. A short original sample is included. Bring your own EPUBs or find books through Standard Ebooks.</p></details>
+      <details><summary>Does it work offline?<span aria-hidden="true">+</span></summary><p>Yes. Once downloaded, the desktop app reads books and saves progress locally. You do not need to sign in or upload your books.</p></details>
+      <details><summary>What about Mac, Linux, and mobile?<span aria-hidden="true">+</span></summary><p>The current download is for 64-bit Windows. Other platforms do not have a tested release yet. The small demo above runs in your browser, but it is not the full book reader.</p></details>
+      <details><summary>Where is my progress saved?<span aria-hidden="true">+</span></summary><p>On Windows, progress and settings are stored in <code>%APPDATA%\BookTyper</code>. Keeping an EPUB at the same location lets BookTyper find its saved place.</p></details>
+    </div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#">BookTyper<span class="brand-period">.</span></a><p>One book. One keystroke at a time.</p><a href="https://github.com/Kelptalks/BookTyper">Made by Kelptalks <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>
